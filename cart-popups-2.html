@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POP-UPS</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css.map">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css" integrity="sha512-uMIpMpgk4n6esmgdfJtATLLezuZNRb96YEgJXVeo4diHFOF/gqlgu4Y5fg+56qVYZfZYdiqnAQZlnu4j9501ZQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/emojionearea.min.css">
+    <link rel="stylesheet" href="css/eProcure.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/custom-color.css">
+    <style>
+        :root 
+        {
+          --eyellow: #F7BC57;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="main-body-tog-2">
+        <button class="btn pop-c-open btn-primary">POP UP 1</button>
+        <button class="btn pop-d-open btn-primary">POP UP 2</button>
+    </div>
+
+    <div id="acc-modal-c" class="r-pop-c">
+        <div class="container-fluid">
+            <div class="row pop-main-body-2">
+                <div class="col-11 pop-heading p-0">
+                    <h6>Payment Successful</h6>
+                </div>
+                <div class="col-1 pop-heading-icon p-0">
+                    <i class="fas fa-times pop-c-close"></i>
+                </div>
+                <div class="col-12 p-0 report-thank-box">
+                    <h6>Thank you for the purchase <span>TALHA TARIQ!</span></h6>
+                    <p>Your order has been successfully placed. You can track the order in your <a href="">order history</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="acc-modal-d" class="r-pop-d">
+        <div class="container-fluid">
+            <div class="row pop-main-body-2">
+                <div class="col-11 pop-heading p-0">
+                    <h6>Sorry! Payment Failed</h6>
+                </div>
+                <div class="col-1 pop-heading-icon p-0">
+                    <i class="fas fa-times pop-d-close"></i>
+                </div>
+                <div class="col-12 p-0 report-thank-box ">
+                    <h6>Payment failed due to low balance</h6>
+                    <p class="rt-para-box">Please select another payment option or <a href="">add new card</a> to proceed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/eProcure.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/emojionearea.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js" integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww==" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+
+
+
+    
+<script>
+    $(".pop-c-open").click(function(){
+        var element = document.getElementById("acc-modal-c");
+        var target = document.getElementById("main-body-tog-2");
+        element.classList.toggle("mob-acc-padding-tog");
+        target.classList.toggle("body-blur");
+    });
+    $(".pop-c-close").click(function(){
+        var element = document.getElementById("acc-modal-c");
+        var target = document.getElementById("main-body-tog-2");
+        element.classList.toggle("mob-acc-padding-tog");
+        target.classList.toggle("body-blur");
+    });
+  </script>
+  <script>
+    $(".pop-d-open").click(function(){
+        var element = document.getElementById("acc-modal-d");
+        var target = document.getElementById("main-body-tog-2");
+        element.classList.toggle("mob-acc-padding-tog");
+        target.classList.toggle("body-blur");
+    });
+    $(".pop-d-close").click(function(){
+        var element = document.getElementById("acc-modal-d");
+        var target = document.getElementById("main-body-tog-2");
+        element.classList.toggle("mob-acc-padding-tog");
+        target.classList.toggle("body-blur");
+    });
+  </script>
+</body>
+</html>

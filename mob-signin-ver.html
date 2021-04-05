@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in Verification Mobile</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css.map">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css" integrity="sha512-uMIpMpgk4n6esmgdfJtATLLezuZNRb96YEgJXVeo4diHFOF/gqlgu4Y5fg+56qVYZfZYdiqnAQZlnu4j9501ZQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/eProcure.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/custom-color.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 msi-box">
+                <h1 class="msi-heading">Sign In Verification</h1>
+            </div>
+            <div class="col-12 msi-box mbiv-1">
+                <p>OTP has been sent to tal******.com</p>
+                <span>Change</span>
+            </div>
+            <div class="col-12 msi-box mbiv-2">
+                <p>Enter One-Time Password (OTP) below</p>
+            </div>
+            <div class="col-12 msi-box mbiv-3">
+                <form class="form-inline">
+                    <input type="text" class="form-control" id='ist' maxlength="1" onkeyup="clickEvent(this,'sec')">
+                    <input type="text" class="form-control" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">
+                    <input type="text" class="form-control" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')">
+                    <input type="text" class="form-control" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fifth')">
+                    <input type="text" class="form-control" id="fifth" maxlength="1" onkeyup="clickEvent(this,'sixth')">
+                    <input type="text" class="form-control" id="sixth" maxlength="1">
+                </form>
+            </div>
+            <div class="col-12 msi-box msib-button" >
+                <button class="btn" style="padding-left: 7.5vw; padding-right: 7.5vw;">SIGN IN</button>
+            </div>
+            <div class="col-12 msi-box mbiv-4">
+                <p>Resend One-Time Password</p>
+            </div>
+            <div class="col-12 msi-box mbiv-5">
+                <p>OTP already sent!</p>
+                <p>Please wait <span id="counter"></span> before resending</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/eProcure.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js" integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww==" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+        $(".proceed-button-animate").click(function(){
+            $(".animation-start").css({"display" : "none"});
+            $(".animation-end.row.end-signin-content").css({"display" : "flex"});
+        });
+        });
+
+
+   
+                    
+        var minute = 1;
+        var second = 60;
+        setInterval(function(){
+            if ( minute == 0 && second == 1)
+            {
+                document.getElementById("counter").innerHTML = "00:00";
+            }else{
+                second--;
+                if(second == 0){
+                    minute --;
+                    second = 60;
+                    if ( minute == 0)
+                    {
+                        minute = minute;
+                    }
+                }
+                document.getElementById("counter").innerHTML = minute + ":" + second ;
+            }
+        }, 1000);
+
+        function clickEvent(first,last){
+			if(first.value.length){
+				document.getElementById(last).focus();
+			}
+        }
+  
+
+</script>
+</body>
+</html>

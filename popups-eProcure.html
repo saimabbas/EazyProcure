@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popups eProcure</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css.map">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/eProcure.css">
+    <link rel="stylesheet" href="css/custom-color.css">
+</head>
+<body>
+    <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal1">Popup 1</button>
+    <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#myModal2">Popup 2</button>
+
+    <div class="modal" id="myModal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="container-fluid epocure-signin">
+                    <div class="row">
+                        <div class="col-12 animation-start">
+                            <div class="row top-head-pop">
+                                <div class="col-8 offset-2">
+                                    <h1>Sign In to submit RFP</h1>
+                                </div>
+                                <div class="col-2 close" data-dismiss="modal">
+                                    <i class="far fa-times-circle"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 prog-pop-display">
+                                    <div class="pop-prog">
+                                        <div class="pop-prog-dot"></div>
+                                        <p>Sign In</p>
+                                    </div>
+                                    <div class="pop-prog">
+                                        <div class="pop-prog-dot"></div>
+                                        <p>Verification</p>
+                                    </div>
+                                    <div class="pop-prog pop-gray-prog">
+                                        <div class="pop-prog-dot pop-gray-prog"></div>
+                                        <p class="pop-gray">Submit RFP</p>
+                                    </div>
+                                    <div class="pop-prog pop-gray-prog">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-7 pop-singin">
+                                    <p>Sign In</p>
+                                </div>
+                                <div class="col-7 pop-radio">
+                                    <div class="form-inline">
+                                        <input name="genderOOO" id="s1" type="radio" checked>
+                                        <label for="s1">Email Address</label>
+                                        <input name="genderOOO" id="s2" type="radio">
+                                        <label for="s2" class=" pop-gray">Phone no.</label>
+                                    </div>
+                                </div>
+                                <div class="col-7 text-proceed">
+                                    <input class="form-control form-control" type="text">
+                                    <button class="btn pop-proceed proceed-button-animate white-btn"  onclick="starttime()" >Proceed</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 pop-bottom-img">
+                                    <img src="img/pop-botto.png" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 animation-end">
+                            <div class="row top-head-pop">
+                                <div class="col-8 offset-2">
+                                    <h1>Sign In to submit RFP</h1>
+                                </div>
+                                <div class="col-2 close" data-dismiss="modal">
+                                    <i class="far fa-times-circle"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 prog-pop-display">
+                                    <div class="pop-prog">
+                                        <div class="pop-prog-dot"></div>
+                                        <p>Sign In</p>
+                                    </div>
+                                    <div class="pop-prog">
+                                        <div class="pop-prog-dot"></div>
+                                        <p>Verification</p>
+                                    </div>
+                                    <div class="pop-prog pop-gray-prog">
+                                        <div class="pop-prog-dot pop-gray-prog"></div>
+                                        <p class="pop-gray">Submit RFP</p>
+                                    </div>
+                                    <div class="pop-prog pop-gray-prog">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-7 pop-singin">
+                                    <p>Sign In</p>
+                                </div>
+                                <div class="col-7 pop-radio" >
+                                    <p>OTP has been sent to tal******.com <a href="#">Change</a></p>
+                                    <h6>Enter One-Time Password (OTP) below</h6>
+                                </div>
+                                <div class="col-7 text-proceed">
+                                    <form class="form-inline pop-otp">
+                                        <input type="text" class="form-control" id='ist' maxlength="1" onkeyup="clickEvent(this,'sec')">
+                                        <input type="text" class="form-control" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">
+                                        <input type="text" class="form-control" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')">
+                                        <input type="text" class="form-control" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fifth')">
+                                        <input type="text" class="form-control" id="fifth" maxlength="1" onkeyup="clickEvent(this,'sixth')">
+                                        <input type="text" class="form-control" id="sixth" maxlength="1">
+                                    </form>
+                                    <button class="btn pop-proceed white-btn">Sign In</button>
+                                </div>
+                            </div>
+                            <p class="resend-otp">Resend One Time Password (OTP)</p>
+                            <p class="otp-sent">OTP already sent!</p>
+                            <p class="please-wait">Please wait <span id="counter"></span> before resending</p>
+                            <div class="row">
+                                <div class="col-12 pop-bottom-img">
+                                    <img src="img/pop-botto.png" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog epocure-signin-oh">
+            <div class="modal-content">
+                <div class="container-fluid epocure-signin">
+                    <div class="row">
+                        <div class="col-12 animation-start">
+                            <div class="row top-head-pop">
+                                <div class="col-8 offset-2">
+                                    <h1>Sign In to submit RFP</h1>
+                                </div>
+                                <div class="col-2 close" data-dismiss="modal">
+                                    <i class="far fa-times-circle"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 prog-pop-display">
+                                    <div class="pop-prog">
+                                        <div class="pop-prog-dot"></div>
+                                        <p>Sign In</p>
+                                    </div>
+                                    <div class="pop-prog">
+                                        <div class="pop-prog-dot"></div>
+                                        <p>Verification</p>
+                                    </div>
+                                    <div class="pop-prog pop-gray-prog">
+                                        <div class="pop-prog-dot pop-gray-prog"></div>
+                                        <p class="pop-gray">Submit RFP</p>
+                                    </div>
+                                    <div class="pop-prog pop-gray-prog">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 op-pop-2-fields">
+                                    <div class="form-group">
+                                        <label><span>*</span>Product Name</label>
+                                        <input class="form-control" type="text">
+                                      </div>
+                                </div>
+                                <div class="col-12 op-pop-2-fields">
+                                    <div class="form-group">
+                                        <label><span>*</span>Product Type</label>
+                                        <input class="form-control" type="text">
+                                      </div>
+                                </div>
+                                <div class="col-12 op-pop-2-fields">
+                                    <div class="form-group">
+                                        <label><span>*</span>Vendor Location <span class="choose-3-locations">(Can choose upto 3 locations)</span></label>
+                                        <input class="form-control" type="text">
+                                      </div>
+                                </div>
+                                <div class="col-12 op-pop-2-fields">
+                                    <div class="form-inline form-inline-wah p-0">
+                                        <div class="form-group" style="width: 45.5%; margin-right: 0;">
+                                            <label><span>*</span>Quantity</label>
+                                            <input class="form-control" type="text" style="width: 92%;">
+                                          </div>
+                                        <div class="form-group" style="width: 45.5%; margin-left: 0; ">
+                                            <label><span>*</span>Pieces</label>
+                                            <input class="form-control" type="text" style="width: 100%;">
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 op-pop-2-fields">
+                                    <div class="click-here-to-add">
+                                        <p class="chtd"><i class="fas fa-plus"></i> Click here to upload or drag and drop</p>
+                                        <div class="added-flies">
+                                            <div class="row" style="display: flex; justify-content: space-evenly;">
+                                                <div class="col-6 added-file">
+                                                    <div class="row m-0">
+                                                        <div class="col-10 p-0">
+                                                            <p>List of medical supplies.pdf </p>
+                                                            <div class="ep-prog-pill">
+                                                                <div class="ps-custom-range " style="width: 80%;">
+                                                                    <div class="ps-custom-range-color-bar-5" ></div>
+                                                                </div>
+                                                                <span class="mr-2">57%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2 p-0 oh-del-box">
+                                                            <i class="far fa-trash-alt delete-pop-2"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 added-file">
+                                                    <div class="row m-0">
+                                                        <div class="col-10 p-0">
+                                                            <p>List of medical supplies.pdf </p>
+                                                            <div class="ep-prog-pill">
+                                                                <div class="ps-custom-range  " style="width: 80%;">
+                                                                    <div class="ps-custom-range-color-bar-5" ></div>
+                                                                </div>
+                                                                <span class="mr-2">57%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2 p-0 oh-del-box" >
+                                                            <i class="far fa-trash-alt delete-pop-2"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row" style="display: flex; justify-content: space-evenly;">
+                                                <div class="col-6 added-file">
+                                                    <div class="row m-0">
+                                                        <div class="col-10 p-0">
+                                                            <p>List of medical supplies.pdf </p>
+                                                            <!-- <div class="ep-prog-pill">
+                                                                <div class="ps-custom-range mt-2" style="width: 80%;">
+                                                                    <div class="ps-custom-range-color-bar-5" ></div>
+                                                                </div>
+                                                                <span class="mr-2">57%</span>
+                                                            </div> -->
+                                                            <p class="file-sis-pop-2">135 Kb</p>
+                                                        </div>
+                                                        <div class="col-2 p-0 oh-del-box">
+                                                            <i class="far fa-trash-alt delete-pop-2"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 added-file">
+                                                    <div class="row m-0">
+                                                        <div class="col-10 p-0">
+                                                            <p>List of medical supplies.pdf </p>
+                                                            <!-- <div class="ep-prog-pill">
+                                                                <div class="ps-custom-range mt-2" style="width: 80%;">
+                                                                    <div class="ps-custom-range-color-bar-5" ></div>
+                                                                </div>
+                                                                <span class="mr-2">57%</span>
+                                                            </div> -->
+                                                            <p class="file-sis-pop-2">135 Kb</p>
+                                                        </div>
+                                                        <div class="col-2 p-0 oh-del-box">
+                                                            <i class="far fa-trash-alt delete-pop-2"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 op-pop-2-fields">
+                                    <div class="form-group">
+                                        <label><span>*</span>Details</label>
+                                        <textarea class="form-control" style="min-height: 6vw;"></textarea>
+                                      </div>
+                                </div>
+                                <div class="col-12 op-pop-2-fields p-0">
+                                    <p class="pop-2-collapse pop-2-sc">Supplier Capability <i class="fas fa-chevron-up"></i></p>
+                                    <div class="form-inline form-inline-wah wah-col-box mt-2">
+                                        <div class="form-group" style="width: 45.5%; margin-right: 0;">
+                                            <label><span>*</span>Quantity</label>
+                                            <input class="form-control" type="text" style="width: 92%;">
+                                          </div>
+                                        <div class="form-group" style="width: 45.5%; margin-left: 0; ">
+                                            <label><span>*</span>Pieces</label>
+                                            <input class="form-control" type="text" style="width: 100%;">
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 op-pop-2-fields p-0">
+                                    <p class="pop-2-collapse  pop-2-scc">Shipping and Payment <i class="fas fa-chevron-up"></i></p>
+                                    <div class="  wah-col-box-fields mt-2">
+                                        <div class="form-check what-fields">
+                                            <input type="checkbox"  id="pop1" >
+                                            <label for="pop1" >I agree to share my details with quoted supplier.</label>
+                                          </div>
+                                          <div class="form-check what-fields">
+                                            <input type="checkbox"  id="pop2" >
+                                            <label for="pop2" >I have read and agreed to abide by the Buying Request Posting Rules.</label>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 submit-button-pop">
+                                    <button class="btn">Submit</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 pop-bottom-img ">
+                                    <div class="ohohoh">
+                                        <div class="ep-pop-2-bot-text">
+                                            <h6>1200+</h6>
+                                            <p>RFQs</p>
+                                        </div>
+                                        <div class="ep-pop-2-bot-text">
+                                            <h6>3214</h6>
+                                            <p>Industries</p>
+                                        </div>
+                                        <div class="ep-pop-2-bot-text">
+                                            <h6>12341+</h6>
+                                            <p>Active Suppliers</p>
+                                        </div>
+                                        <div class="ep-pop-2-bot-text">
+                                            <h6>< 18h </h6>
+                                            <p>Average Quotation Number</p>
+                                        </div>
+                                    </div>
+                                    <img class="pop-bot-2-img" src="img/pop-botto.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <script src="js/jquery.js"></script>
+    <script src="js/javas.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+function clickEvent(first,last){
+if(first.value.length){
+  document.getElementById(last).focus();
+}
+}
+
+        $(".proceed-button-animate").click(function(){
+            $(".animation-start").css({"display" : "none"});
+            $(".animation-end").css({"display" : "block"});
+        });
+        
+        $(".pop-2-sc").click(function(){
+			$(".wah-col-box").slideToggle(500);
+            $(".pop-2-sc i").toggleClass("fa-chevron-down")
+            $(".pop-2-sc i").toggleClass("fa-chevron-up")
+		});
+        $(".pop-2-scc").click(function(){
+			$(".wah-col-box-fields").slideToggle(500);
+            $(".pop-2-scc i").toggleClass("fa-chevron-down")
+            $(".pop-2-scc i").toggleClass("fa-chevron-up")
+		});
+    </script>
+    <script>
+
+        $(document).ready(function(){
+
+    
+       
+
+
+                    
+        var minute = 1;
+        var second = 60;
+        setInterval(function(){
+            if ( minute == 0 && second == 1)
+            {
+                document.getElementById("counter").innerHTML = "00:00";
+            }else{
+                second--;
+                if(second == 0){
+                    minute --;
+                    second = 60;
+                    if ( minute == 0)
+                    {
+                        minute = minute;
+                    }
+                }
+                document.getElementById("counter").innerHTML = minute + ":" + second ;
+            }
+        }, 1000);
+
+      
+    });
+
+</script>
+</body>
+</html>

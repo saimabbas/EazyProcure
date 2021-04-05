@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFQ Filter Mobile</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css.map">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css" integrity="sha512-uMIpMpgk4n6esmgdfJtATLLezuZNRb96YEgJXVeo4diHFOF/gqlgu4Y5fg+56qVYZfZYdiqnAQZlnu4j9501ZQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/eProcure.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/custom-color.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 m2-rfq-1">
+                <i class="fas fa-chevron-down"></i>
+                <p>Search My Proposals</p>
+            </div>
+        </div>
+        <div class="row m2-rfq-box">
+            <div class="col-12 m2-rfq-2 smp-t-1">
+                <p>Date</p>
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            <div class="col-12 m2-rfq-3 smp-c-1">
+                <div class="form-group">
+                    <p>Starting</p>
+                    <input class="form-control " type="text">
+                  </div>
+                  <div class="form-group">
+                    <p>Closing</p>
+                    <input class="form-control " type="text">
+                  </div>
+            </div>
+            <div class="col-12 m2-rfq-2-value">
+                <p>No setting</p>
+            </div>
+        </div>
+        <div class="row m2-rfq-box">
+            <div class="col-12 m2-rfq-2 smp-t-2">
+                <p>Buyer Location</p>
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            <div class="col-12 m2-rfq-3 smp-c-2">
+                <p class="select-locations">Select upto 3 locations</p>
+                <div class="col-12 msi-box msib-radio mrfq-2-radio">
+                    <div class="row">
+                    <div class="col">
+                        <input type="checkbox" name="ohohoh" id="location-1" checked>
+                        <label for="location-1">Sharjah</label>
+                    </div>
+                    <div class="col">
+                        <input type="checkbox" name="ohohoh" id="location-2">
+                        <label for="location-2">Abu Dhabi</label>
+                    </div>
+                    <div class="col">
+                        <input type="checkbox" name="ohohoh" id="location-3" checked>
+                        <label for="location-3">Dubai</label>
+                    </div>
+                    <div class="col">
+                        <input type="checkbox" name="ohohoh" id="location-4">
+                        <label for="location-4">Saudi Arabia</label>
+                    </div>
+                    <div class="col">
+                        <input type="checkbox" name="ohohoh" id="location-5" checked>
+                        <label for="location-5">Ajman</label>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 m2-rfq-2-value">
+                <p>Dubai, Sharjah, Abu Dhabi</p>
+            </div>
+        </div>
+        <div class="row m2-rfq-box">
+            <div class="col-12 m2-rfq-2 smp-t-3">
+                <p>Contains attachments</p>
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            <div class="col-12 m2-rfq-5 smp-c-3">
+                <div class="custom-control custom-radio ">
+                    <input id="y" name="attach-yes-no" type="radio" class="custom-control-input">
+                    <label for="y" class="custom-control-label label-rfp">Yes</label>
+                </div>
+                <div class="custom-control custom-radio ">
+                    <input id="n" name="attach-yes-no" type="radio" class="custom-control-input">
+                    <label for="n" class="custom-control-label label-rfp">No</label>
+                </div>
+            </div>
+            <div class="col-12 m2-rfq-2-value">
+                <p>Yes</p>
+            </div>
+        </div>
+        <div class="row m2-rfq-box">
+            <div class="col-12 m2-rfq-2 smp-t-4">
+                <p>Expired</p>
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            <div class="col-12 m2-rfq-5 smp-c-4">
+                <div class="custom-control custom-radio ">
+                    <input id="yexpired1" name="expired-yes-no" type="radio" class="custom-control-input">
+                    <label for="yexpired1" class="custom-control-label label-rfp">Yes</label>
+                </div>
+                <div class="custom-control custom-radio ">
+                    <input id="nexpired2" name="expired-yes-no" type="radio" class="custom-control-input">
+                    <label for="nexpired2" class="custom-control-label label-rfp">No</label>
+                </div>
+            </div>
+            <div class="col-12 m2-rfq-2-value">
+                <p>Yes</p>
+            </div>
+        </div>
+        <div class="row m2-rfq-box">
+            <div class="col-12 m2-rfq-2 smp-t-5">
+                <p>Quantity</p>
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            <div class="col-12 m2-rfq-5 smp-c-5">
+                <div class="custom-control custom-radio ">
+                    <input id="yquantity1" name="quantity-yes-no" type="radio" class="custom-control-input">
+                    <label for="yquantity1" class="custom-control-label label-rfp">More than 10</label>
+                </div>
+                <div class="custom-control custom-radio ">
+                    <input id="nquantity2" name="quantity-yes-no" type="radio" class="custom-control-input">
+                    <label for="nquantity2" class="custom-control-label label-rfp">More than 100</label>
+                </div>
+                <div class="custom-control custom-radio ">
+                    <input id="nquantity3" name="quantity-yes-no" type="radio" class="custom-control-input">
+                    <label for="nquantity3" class="custom-control-label label-rfp">More than 1000</label>
+                </div>
+            </div>
+            <div class="col-12 m2-rfq-2-value">
+                <p>More than 10</p>
+            </div>
+        </div>
+        <div class="row m2-rfq-box m2-rfq-down">
+            <div class="col-12 m2-rfq-2 smp-t-6">
+                <p>Shipped From</p>
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            <div class="col-12 m2-rfq-5 smp-c-6">
+                <select class="custom-select ">
+                    <option class="opt-r">Pakistan</option>
+                    <option class="opt-r">Saudi Arabia</option>
+                    <option class="opt-r">Iraq</option>
+                    <option class="opt-r">Iran</option>
+                    <option class="opt-r">India</option>
+                    <option class="opt-r">USA</option>
+                    <option class="opt-r">China</option>
+                    <option class="opt-r">England</option>
+                    <option class="opt-r">Korea</option>
+                </select>
+            </div>
+            <div class="col-12 m2-rfq-2-value">
+                <p>No setting</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mob-2-rfq-fixed">
+        <div class="col-12">
+            <button class="btn cancel-mob-2-rfq">Cancel</button>
+            <button class="btn apply-mob-2-rfq">Apply</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/eProcure.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js" integrity="sha512-VHsNaV1C4XbgKSc2O0rZDmkUOhMKPg/rIi8abX9qTaVDzVJnrDGHFnLnCnuPmZ3cNi1nQJm+fzJtBbZU9yRCww==" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script>
+        $(".smp-t-1").click(function () {
+
+        $(".smp-c-1").slideToggle(500);
+        $(".smp-t-1 i").toggleClass("fa-chevron-up");
+        $(".smp-t-1 i").toggleClass("fa-chevron-down");
+        
+        });
+        $(".smp-t-2").click(function () {
+        $(".smp-c-2").slideToggle(500);
+        $(".smp-t-2 i").toggleClass("fa-chevron-up");
+        $(".smp-t-2 i").toggleClass("fa-chevron-down");
+        });
+        $(".smp-t-3").click(function () {
+        $(".smp-c-3").slideToggle(500);
+        $(".smp-t-3 i").toggleClass("fa-chevron-up");
+        $(".smp-t-3 i").toggleClass("fa-chevron-down");
+        });
+        $(".smp-t-4").click(function () {
+        $(".smp-c-4").slideToggle(500);
+        $(".smp-t-4 i").toggleClass("fa-chevron-up");
+        $(".smp-t-4 i").toggleClass("fa-chevron-down");
+        });
+        $(".smp-t-5").click(function () {
+        $(".smp-c-5").slideToggle(500);
+        $(".smp-t-5 i").toggleClass("fa-chevron-up");
+        $(".smp-t-5 i").toggleClass("fa-chevron-down");
+        });
+        $(".smp-t-6").click(function () {
+        $(".smp-c-6").slideToggle(500);
+        $(".smp-t-6 i").toggleClass("fa-chevron-up");
+        $(".smp-t-6 i").toggleClass("fa-chevron-down");
+        });
+    </script>
+</body>
+</html>
